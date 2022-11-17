@@ -107,8 +107,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="380dp"
-        android:layout_height="100dp"
+        android:layout_width="374dp"
+        android:layout_height="95dp"
         android:adjustViewBounds="true"
         android:rotationX="-180"
         android:src="@drawable/inter_03"
@@ -145,7 +145,7 @@
         android:id="@+id/btnInterCorreto"
         android:layout_width="290dp"
         android:layout_height="60dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="30dp"
         android:text="Laranja - Violeta - Verde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -155,9 +155,20 @@
         android:id="@+id/btnInterErrado1"
         android:layout_width="290dp"
         android:layout_height="60dp"
+        android:layout_marginTop="5dp"
         android:text="Violeta - Verde - Laranja"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnInterCorreto" />
+
+    <Button
+        android:id="@+id/btnInterErrado2"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:text="Verde - Laranja - Violeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInterErrado1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
