@@ -28,7 +28,7 @@ public class SetIntermediario extends AppCompatActivity {
         btnErrado1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnCorreto.setEnabled(false);
+                //btnCorreto.setEnabled(false);
                 btnErrado1.setText("Violeta - Verde - Laranja");
                 btnErrado1.setBackgroundTintList(getResources().getColorStateList(R.color.vermelho));
             }
