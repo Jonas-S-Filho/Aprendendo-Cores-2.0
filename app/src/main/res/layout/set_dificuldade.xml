@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aprendendocores20.SetDificuldade">
+
+    <TextView
+        android:id="@+id/textDificuldade"
+        android:layout_width="340dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="80dp"
+        android:text="Selecione a dificuldade"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnVoltarmenuS1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="center"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toTopOf="@+id/textDificuldade"
+        app:layout_constraintEnd_toStartOf="@+id/textDificuldade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnFacil"
+        android:layout_width="259dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:text="Fácil"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDificuldade" />
+
+    <Button
+        android:id="@+id/btnIntermediario"
+        android:layout_width="259dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:text="Intermediário"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacil" />
+
+    <Button
+        android:id="@+id/btnDificil"
+        android:layout_width="259dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:text="Difícil"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIntermediario" />
+</androidx.constraintlayout.widget.ConstraintLayout>

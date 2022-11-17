@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aprendendocores20.SetIntermediario">
+
+    <TextView
+        android:id="@+id/textInter1"
+        android:layout_width="349dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="60dp"
+        android:text="De acordo com a mistura das cores, identifique a cor correta:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnVoltarmenuInter1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="center"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toTopOf="@+id/textInter1"
+        app:layout_constraintEnd_toStartOf="@+id/textInter1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/interLaranja"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/inter_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInter1" />
+
+    <TextView
+        android:id="@+id/textInter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="Vermelho"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/interLaranja"
+        app:layout_constraintStart_toStartOf="@+id/interLaranja"
+        app:layout_constraintTop_toBottomOf="@+id/textInter1"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <TextView
+        android:id="@+id/textInter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amarelo"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/interLaranja"
+        app:layout_constraintEnd_toEndOf="@+id/interLaranja"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toEndOf="@+id/textInter2"
+        app:layout_constraintTop_toBottomOf="@+id/textInter1"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <ImageView
+        android:id="@+id/InterVioleta"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/inter_02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interLaranja" />
+
+    <TextView
+        android:id="@+id/textInter4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="Vermelho"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/InterVioleta"
+        app:layout_constraintStart_toStartOf="@+id/InterVioleta"
+        app:layout_constraintTop_toBottomOf="@+id/interLaranja"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <TextView
+        android:id="@+id/textInter5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azul Ciano"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/InterVioleta"
+        app:layout_constraintEnd_toEndOf="@+id/InterVioleta"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toEndOf="@+id/textInter4"
+        app:layout_constraintTop_toBottomOf="@+id/interLaranja"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:rotationX="-180"
+        android:src="@drawable/inter_03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InterVioleta" />
+
+    <TextView
+        android:id="@+id/textInter6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amarelo"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toEndOf="@+id/textInter7"
+        app:layout_constraintTop_toBottomOf="@+id/InterVioleta"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <TextView
+        android:id="@+id/textInter7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Azul Ciano"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/InterVioleta"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <Button
+        android:id="@+id/btnInterCorreto"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:text="Laranja - Violeta - Verde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/btnInterErrado1"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:text="Violeta - Verde - Laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInterCorreto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
