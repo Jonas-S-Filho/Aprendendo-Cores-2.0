@@ -41,11 +41,12 @@ public class SetIntermediario extends AppCompatActivity {
                 btnCorreto.setText("Laranja - Violeta - Verde");
                 btnCorreto.setBackgroundTintList(getResources().getColorStateList(R.color.verde));
 
-                //test Transição para tela de parabéns (Ainda falta)
+                //Transição para tela de parabéns
                 delay.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(SetIntermediario.this, "Correto", Toast.LENGTH_SHORT).show();
+                        JogarNV();
+
                     }
                 },4000);
 
@@ -76,6 +77,7 @@ public class SetIntermediario extends AppCompatActivity {
             }
         });
 
+        //Botão Tentar Novamente
         tryAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {tryAgain();
@@ -91,7 +93,13 @@ public class SetIntermediario extends AppCompatActivity {
             }
         });
     }
+
     //Transição de Tela
+    public void JogarNV() {
+        android.content.Intent intent = new Intent(this, Parabens.class);
+        startActivity(intent);
+    }
+    //-----------------------------------------------------------------------------------------
     public void voltarMenuInter(){
         android.content.Intent intent = new Intent(this, MenuPrincipal.class);
         startActivity(intent);
