@@ -8,10 +8,10 @@
 
     <TextView
         android:id="@+id/textInter1"
-        android:layout_width="349dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="60dp"
-        android:text="De acordo com a mistura das cores, identifique a cor correta:"
+        android:layout_width="344dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="56dp"
+        android:text="Identifique as misturas de cores na ordem correta:"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,12 +22,13 @@
         android:id="@+id/btnVoltarmenuInter"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="center"
         android:scaleX="1.5"
         android:scaleY="1.5"
         app:layout_constraintBottom_toTopOf="@+id/textInter1"
-        app:layout_constraintEnd_toStartOf="@+id/textInter1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -39,9 +40,11 @@
         android:id="@+id/interLaranja"
         android:layout_width="380dp"
         android:layout_height="100dp"
+        android:layout_marginTop="20dp"
         android:adjustViewBounds="true"
         android:src="@drawable/inter_01"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInter1" />
 
@@ -177,43 +180,42 @@
         android:layout_height="44dp"
         android:background="#00FFFFFF"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/textInter1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btnVoltarmenuInter"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/textInter8"
-        android:layout_width="166dp"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:paddingTop="7dp"
-        android:text="Tentar Novamente"
-        android:textSize="20sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/btnTryAgain"
-        app:layout_constraintEnd_toEndOf="@+id/btnTryAgain"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tryAgainicone"
-        app:layout_constraintTop_toTopOf="@+id/btnTryAgain"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintTop_toBottomOf="@+id/btnInterErrado2"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/tryAgainicone"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="4dp"
         android:adjustViewBounds="true"
         android:background="#00FFFFFF"
         android:clickable="false"
         android:scaleType="fitCenter"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/btnTryAgain"
         app:layout_constraintStart_toStartOf="@+id/btnTryAgain"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
         app:srcCompat="@android:drawable/ic_menu_rotate"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textInter8"
+        android:layout_width="197dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:paddingTop="7dp"
+        android:text="Tentar Novamente"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTryAgain"
+        app:layout_constraintEnd_toEndOf="@+id/btnTryAgain"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tryAgainicone"
+        app:layout_constraintTop_toTopOf="@+id/btnTryAgain"
+        app:layout_constraintVertical_bias="0.1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,7 +29,7 @@ public class SetIntermediario extends AppCompatActivity {
         Button btnErrado1 = findViewById(R.id.btnInterErrado1);
         Button btnErrado2 = findViewById(R.id.btnInterErrado2);
         ImageButton voltarMenuInter = findViewById(R.id.btnVoltarmenuInter);
-        Button tryAgain = findViewById(R.id.btnTryAgain);
+        Button tryAgain = (Button) findViewById(R.id.btnTryAgain);
 
         //Funções e Interações
         //Opções
@@ -59,7 +59,7 @@ public class SetIntermediario extends AppCompatActivity {
                 btnErrado2.setEnabled(false);
                 btnErrado1.setText("Violeta - Verde - Laranja");
                 btnErrado1.setBackgroundTintList(getResources().getColorStateList(R.color.vermelho));
-
+                tryAgain.setVisibility(View.VISIBLE);
 
             }
         });
@@ -71,11 +71,11 @@ public class SetIntermediario extends AppCompatActivity {
                 btnErrado1.setEnabled(false);
                 btnErrado2.setText("Verde - Laranja - Violeta");
                 btnErrado2.setBackgroundTintList(getResources().getColorStateList(R.color.vermelho));
+                tryAgain.setVisibility(View.VISIBLE);
 
             }
         });
 
-        //Tentar Novamente
         tryAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {tryAgain();
