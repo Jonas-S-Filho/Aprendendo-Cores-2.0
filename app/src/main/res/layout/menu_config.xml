@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/circuloConfig1"
+        android:id="@+id/imgCirculoConfig1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -59,10 +59,10 @@
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circuloConfig1" />
+        app:layout_constraintTop_toBottomOf="@+id/imgCirculoConfig1" />
 
     <ImageView
-        android:id="@+id/circuloConfig2"
+        android:id="@+id/imgCirculoConfig2"
         android:layout_width="413dp"
         android:layout_height="103dp"
         android:layout_marginTop="28dp"

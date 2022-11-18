@@ -13,6 +13,13 @@
         android:theme="@style/Theme.AprendendoCores20"
         tools:targetApi="31">
         <activity
+            android:name=".Parabens"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SetIntermediario"
             android:exported="false">
             <meta-data

@@ -47,7 +47,7 @@ public class SetIntermediario extends AppCompatActivity {
                     public void run() {
                         Toast.makeText(SetIntermediario.this, "Correto", Toast.LENGTH_SHORT).show();
                     }
-                },3000);
+                },4000);
 
             }
         });
