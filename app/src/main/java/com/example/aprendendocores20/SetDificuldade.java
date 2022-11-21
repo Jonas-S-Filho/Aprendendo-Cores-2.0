@@ -25,27 +25,27 @@ public class SetDificuldade extends AppCompatActivity {
 
         //Funções e Interações
         //Dificuldades
-        btnFacil.setOnClickListener(new View.OnClickListener() {
+        /*btnFacil.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {btnFacil();
 
             }
-        });
-        //----------------------------------------------------------
+        });*/
+
         btnInter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {btnInter();
 
             }
         });
-        //----------------------------------------------------------
+
         btnDificil.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {btnDificil();
 
             }
         });
-
+        //----------------------------------------------------------
         //Botão Voltar
         voltarMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +56,18 @@ public class SetDificuldade extends AppCompatActivity {
     }
 
     //Transição de tela
+    /*private void btnFacil() {
+        android.content.Intent intent = new Intent(this, SetFacil.class);
+        startActivity(intent);
+    }*/
+
     private void btnInter() {
         android.content.Intent intent = new Intent(this, SetIntermediario.class);
+        startActivity(intent);
+    }
+
+    private void btnDificil() {
+        android.content.Intent intent = new Intent(this, SetDificilOpcoes.class);
         startActivity(intent);
     }
     //-----------------------------------------------------------------------------------------
