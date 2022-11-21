@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetFacil">
+
+    <Button
+        android:id="@+id/btnFacilCorreto2"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Vermelho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto" />
+
+    <Button
+        android:id="@+id/btnFacilCorreto3"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Azul Ciano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto2" />
+
+    <ImageButton
+        android:id="@+id/btnVoltarmenuFacil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="center"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toTopOf="@+id/textFacil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textFacil"
+        android:layout_width="344dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="56dp"
+        android:text="Identifique as cores no quadro abaixo:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vermelhoFacil"
+        android:layout_width="281dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFacil"
+        app:srcCompat="@drawable/vermelho" />
+
+    <ImageView
+        android:id="@+id/amareloFacil"
+        android:layout_width="257dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFacil"
+        app:srcCompat="@drawable/amarelo" />
+
+    <ImageView
+        android:id="@+id/azulCianoFacil"
+
+        android:layout_width="257dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFacil"
+        app:srcCompat="@drawable/azul_ciano" />
+
+    <Button
+        android:id="@+id/btnFacilCorreto"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="360dp"
+        android:text="Amarelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFacil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
