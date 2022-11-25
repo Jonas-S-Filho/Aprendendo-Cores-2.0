@@ -27,11 +27,11 @@ public class SetDificilOpcoes extends AppCompatActivity {
 
         //Funções e Interações
         //Opções
-        /*AmareloVerde.setOnClickListener(new View.OnClickListener() {
+        AmareloVerde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {AmareloVerde();
             }
-        });*/
+        });
 
         //---------------------------------------------------------------------------------
         voltarMenuDificil.setOnClickListener(new View.OnClickListener() {
@@ -44,10 +44,10 @@ public class SetDificilOpcoes extends AppCompatActivity {
 
     //Transição de Tela
 
-    /*public void AmareloVerde() {
-        android.content.Intent intent = new Intent(this, AmareloVerdfe.class);
+    public void AmareloVerde() {
+        android.content.Intent intent = new Intent(this, SetDificilcores.class);
         startActivity(intent);
-    }*/
+    }
 
     public void voltarMenuDificil() {
         android.content.Intent intent = new Intent(this, MenuPrincipal.class);
