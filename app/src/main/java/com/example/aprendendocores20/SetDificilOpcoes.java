@@ -16,6 +16,8 @@ public class SetDificilOpcoes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.set_dificil_opcoes);
 
+        int valCor;
+
         //Botões
         ImageView AmareloVerde = findViewById(R.id.btnAmareloVerde);
         ImageView AmareloLaranja = findViewById(R.id.btnAmareloLaranja);
@@ -29,9 +31,51 @@ public class SetDificilOpcoes extends AppCompatActivity {
         //Opções
         AmareloVerde.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {AmareloVerde();
+            public void onClick(View v) {
+                valCor = 5;
+                setDificilcores(valCor);
             }
         });
+
+        AmareloLaranja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valCor = 3;
+                setDificilcores(valCor);
+            }
+        });
+
+        VermelhoLaranja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valCor = 2;
+                setDificilcores(valCor);
+            }
+        });
+
+        AzulVerde.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valCor = 0;
+                setDificilcores(valCor);
+            }
+        });
+
+        AzulVioleta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valCor = 4;
+                setDificilcores(valCor);
+            }
+        });
+
+        VermelhoVioleta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valCor = 1;
+                setDificilcores(valCor);
+            }
+        }); 
 
         //---------------------------------------------------------------------------------
         voltarMenuDificil.setOnClickListener(new View.OnClickListener() {
@@ -40,16 +84,16 @@ public class SetDificilOpcoes extends AppCompatActivity {
 
             }
         });
-    }
-
+  }   
     //Transição de Tela
 
-    public void AmareloVerde() {
+    public void SetDificilcores(int valCor) {
         android.content.Intent intent = new Intent(this, SetDificilcores.class);
+        intent.putExtra("valorcor", valCor);
         startActivity(intent);
     }
 
-    public void voltarMenuDificil() {
+     public void voltarMenuDificil() {
         android.content.Intent intent = new Intent(this, MenuPrincipal.class);
         startActivity(intent);
     }
