@@ -6,27 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".SetFacil">
 
-    <Button
-        android:id="@+id/btnFacilCorreto2"
-        android:layout_width="290dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:text="Vermelho"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto" />
-
-    <Button
-        android:id="@+id/btnFacilCorreto3"
-        android:layout_width="290dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:text="Azul Ciano"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto2" />
-
     <ImageButton
         android:id="@+id/btnVoltarmenuFacil"
         android:layout_width="40dp"
@@ -59,8 +38,8 @@
 
     <ImageView
         android:id="@+id/vermelhoFacil"
-        android:layout_width="281dp"
-        android:layout_height="322dp"
+        android:layout_width="264dp"
+        android:layout_height="260dp"
         android:layout_marginTop="30dp"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,11 +76,74 @@
         android:id="@+id/btnFacilCorreto"
         android:layout_width="290dp"
         android:layout_height="60dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="328dp"
         android:text="Amarelo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFacil" />
+
+    <Button
+        android:id="@+id/btnFacilCorreto3"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Azul Ciano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto2" />
+
+    <Button
+        android:id="@+id/btnFacilCorreto2"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:text="Vermelho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto" />
+
+    <Button
+        android:id="@+id/btnTryAgain3"
+        android:layout_width="243dp"
+        android:layout_height="44dp"
+        android:background="#00FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFacil"
+        app:layout_constraintVertical_bias="0.984"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/tryAgainicone3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:clickable="false"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTryAgain3"
+        app:layout_constraintStart_toStartOf="@+id/btnTryAgain3"
+        app:layout_constraintTop_toTopOf="@+id/btnTryAgain3"
+        app:srcCompat="@android:drawable/ic_menu_rotate"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textTryagainDificil2"
+        android:layout_width="197dp"
+        android:layout_height="34dp"
+        android:clickable="false"
+        android:paddingTop="4dp"
+        android:text="Tentar Novamente"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTryAgain3"
+        app:layout_constraintEnd_toEndOf="@+id/btnTryAgain3"
+        app:layout_constraintStart_toEndOf="@+id/tryAgainicone3"
+        app:layout_constraintTop_toTopOf="@+id/btnTryAgain3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
