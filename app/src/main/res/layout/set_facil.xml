@@ -38,9 +38,9 @@
 
     <ImageView
         android:id="@+id/vermelhoFacil"
-        android:layout_width="264dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="287dp"
+        android:layout_height="287dp"
+        android:layout_marginTop="25dp"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +49,9 @@
 
     <ImageView
         android:id="@+id/amareloFacil"
-        android:layout_width="257dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="287dp"
+        android:layout_height="287dp"
+        android:layout_marginTop="25dp"
         android:adjustViewBounds="true"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,9 +62,9 @@
     <ImageView
         android:id="@+id/azulCianoFacil"
 
-        android:layout_width="257dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="287dp"
+        android:layout_height="287dp"
+        android:layout_marginTop="25dp"
         android:adjustViewBounds="true"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +76,7 @@
         android:id="@+id/btnFacilCorreto"
         android:layout_width="290dp"
         android:layout_height="60dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="312dp"
         android:text="Amarelo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -98,7 +98,7 @@
         android:id="@+id/btnFacilCorreto2"
         android:layout_width="290dp"
         android:layout_height="60dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:text="Vermelho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -109,12 +109,16 @@
         android:id="@+id/btnTryAgain3"
         android:layout_width="243dp"
         android:layout_height="44dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="8dp"
         android:background="#00FFFFFF"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFacil"
-        app:layout_constraintVertical_bias="0.984"
+        app:layout_constraintVertical_bias="0.915"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
