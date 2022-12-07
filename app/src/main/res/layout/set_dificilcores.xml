@@ -42,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="330dp"
         android:adjustViewBounds="true"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -51,12 +52,28 @@
         app:srcCompat="@drawable/c_01am_vd_02am_lj_04az_vd_06vm_vt" />
 
     <ImageView
+        android:id="@+id/opcoes_03_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
+        app:layout_constraintVertical_bias="0.233"
+        app:srcCompat="@drawable/c_03vm_lj_05az_vt" />
+
+    <ImageView
         android:id="@+id/c01_AmareloVerde"
         android:layout_width="260dp"
         android:layout_height="260dp"
         android:layout_marginTop="30dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
         app:srcCompat="@drawable/c01_amarelo_verde" />
@@ -66,19 +83,31 @@
         android:layout_width="260dp"
         android:layout_height="260dp"
         android:layout_marginTop="30dp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
         app:srcCompat="@drawable/c02_amarelo_laranja" />
+
+    <ImageView
+        android:id="@+id/c03_VermelhoLaranja"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
+        app:srcCompat="@drawable/c03_vermelho_laranja" />
 
     <ImageView
         android:id="@+id/c04_AzulVerde"
         android:layout_width="260dp"
         android:layout_height="260dp"
         android:layout_marginTop="30dp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,11 +115,23 @@
         app:srcCompat="@drawable/c04_azul_verde" />
 
     <ImageView
+        android:id="@+id/c05_AzulVioleta"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
+        app:srcCompat="@drawable/c05_azul_violeta" />
+
+    <ImageView
         android:id="@+id/c06_VermelhoVioleta"
         android:layout_width="260dp"
         android:layout_height="260dp"
         android:layout_marginTop="30dp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,7 +145,7 @@
         android:layout_marginTop="455dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="75dp"
-        android:background="#99404040"
+        android:background="#00404040"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
@@ -117,7 +158,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="455dp"
         android:layout_marginBottom="75dp"
-        android:background="#99404040"
+        android:background="#00404040"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
@@ -130,7 +171,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="353dp"
         android:layout_marginBottom="180dp"
-        android:background="#99404040"
+        android:background="#00404040"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
@@ -143,10 +184,52 @@
         android:layout_marginTop="353dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="180dp"
-        android:background="#99404040"
+        android:background="#00404040"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPerguntaDificil"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnTryAgain2"
+        android:layout_width="243dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInterErrado2"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/tryAgainicone2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:clickable="false"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTryAgain2"
+        app:layout_constraintStart_toStartOf="@+id/btnTryAgain2"
+        app:layout_constraintTop_toTopOf="@+id/btnTryAgain2"
+        app:srcCompat="@android:drawable/ic_menu_rotate"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textTryagainDificil"
+        android:layout_width="197dp"
+        android:layout_height="34dp"
+        android:clickable="false"
+        android:paddingTop="4dp"
+        android:text="Tentar Novamente"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTryAgain2"
+        app:layout_constraintEnd_toEndOf="@+id/btnTryAgain2"
+        app:layout_constraintStart_toEndOf="@+id/tryAgainicone2"
+        app:layout_constraintTop_toTopOf="@+id/btnTryAgain2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
