@@ -40,7 +40,7 @@
         android:id="@+id/vermelhoFacil"
         android:layout_width="287dp"
         android:layout_height="287dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,23 +76,12 @@
         android:id="@+id/btnFacilCorreto"
         android:layout_width="290dp"
         android:layout_height="60dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="304dp"
         android:text="Amarelo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFacil" />
-
-    <Button
-        android:id="@+id/btnFacilCorreto3"
-        android:layout_width="290dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        android:text="Azul Ciano"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto2" />
 
     <Button
         android:id="@+id/btnFacilCorreto2"
@@ -106,10 +95,21 @@
         app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto" />
 
     <Button
+        android:id="@+id/btnFacilCorreto3"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Azul Ciano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacilCorreto2" />
+
+    <Button
         android:id="@+id/btnTryAgain3"
         android:layout_width="243dp"
         android:layout_height="44dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="360dp"
         android:layout_marginEnd="8dp"
         android:background="#00FFFFFF"
         android:visibility="gone"

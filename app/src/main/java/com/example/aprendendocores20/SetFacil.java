@@ -61,7 +61,7 @@ public class SetFacil extends AppCompatActivity {
                         btnvermelho.setEnabled(false);
 
                                 if (imagemfacil == 1) {
-                                        btnamarelo.setBackgroundTintList(getResources().getColorStateList(R.color.verde));
+                                        btnamarelo.setBackgroundTintList(getResources().getColorStateList(R.color.Amarelo));
 
                                         delay.postDelayed(new Runnable() {
                                                 @Override
@@ -87,7 +87,6 @@ public class SetFacil extends AppCompatActivity {
 
                                 if (imagemfacil == 0) {
                                         btnvermelho.setBackgroundTintList(getResources().getColorStateList(R.color.vermelho));
-
                                         delay.postDelayed(new Runnable() {
                                                 @Override
                                                 public void run() {
@@ -113,7 +112,7 @@ public class SetFacil extends AppCompatActivity {
 
                                 if (imagemfacil == 2) {
 
-                                        btnazul.setBackgroundTintList(getResources().getColorStateList(R.color.verde));
+                                        btnazul.setBackgroundTintList(getResources().getColorStateList(R.color.AzulCiano));
 
                                         delay.postDelayed(new Runnable() {
                                                 @Override
@@ -122,7 +121,7 @@ public class SetFacil extends AppCompatActivity {
 
 
                                                 }
-                                        }, 4000);
+                                        }, 3000);
                                 } else {
                                         tryAgain.setVisibility(View.VISIBLE);
 
